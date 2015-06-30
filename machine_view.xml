@@ -26,17 +26,28 @@
 									<sheet>
 										<group>
 											<field name="sheet_list"/>
-											<field name="price"/>
-											<field name="quantity"/>
+											<field name="sheet_price_combination">
+												<form string ='price quantity list'>
+													<sheet>
+														<group>
+															<field name="price"/>
+															<field name="quantity"/>
+														</group>
+													</sheet>
+												</form>
+												<tree editable="bottom">
+													<field name="price"/>
+													<field name="quantity"/>
+												</tree>
+											</field>
 										</group>
 									</sheet>
-									
 								</form>
+								
 								<tree string ="Sheet">
 									<field name="sheet_list"/>
-									<field name="price"/>
-									<field name="quantity"/>
 								</tree>
+								
 							</field>
 						</group>
 					</sheet>    			
